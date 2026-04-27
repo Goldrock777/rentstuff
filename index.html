@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vancouver's home for camping gear rentals. Tents, sleeping bags, stoves, packs and more — daily, weekly and monthly rates." />
+  <title>BaseCamp YVR — Camping Gear Rentals in Vancouver, BC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="BaseCamp YVR home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">BaseCamp <em>YVR</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#gear">Gear</a>
+        <a href="#how">How it works</a>
+        <a href="#pickup">Pickup</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#gear" class="btn btn-primary header-cta">Browse gear</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Vancouver, BC · Mt. Pleasant</p>
+          <h1>Rent the gear.<br />Skip the garage.</h1>
+          <p class="hero-sub">From a weekend on the Sunshine Coast to a month in the Rockies — pick it up in Vancouver, drop it back when you're done. Daily, weekly and monthly rates on every item.</p>
+          <div class="hero-cta">
+            <a href="#gear" class="btn btn-primary">Shop 30 items</a>
+            <a href="#how" class="btn btn-ghost">How it works</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>30+</strong><span>items in stock</span></li>
+            <li><strong>$15</strong><span>min daily rate</span></li>
+            <li><strong>0</strong><span>deposit on most gear</span></li>
+          </ul>
+        </div>
+        <div class="hero-grid" aria-hidden="true">
+          <div class="tile tile-a">⛺</div>
+          <div class="tile tile-b">🔥</div>
+          <div class="tile tile-c">🎒</div>
+          <div class="tile tile-d">🧭</div>
+          <div class="tile tile-e">🛶</div>
+          <div class="tile tile-f">🪓</div>
+          <div class="tile tile-g">🥾</div>
+          <div class="tile tile-h">🌲</div>
+          <div class="tile tile-i">💡</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gear" class="catalog">
+      <div class="container">
+        <div class="catalog-head">
+          <div>
+            <h2>The catalog</h2>
+            <p class="muted">All rates in CAD. Pickup at our Mt. Pleasant shop, or add delivery within Metro Vancouver.</p>
+          </div>
+          <div class="search-wrap">
+            <input id="search" type="search" placeholder="Search gear…" aria-label="Search gear" />
+          </div>
+        </div>
+
+        <div id="filters" class="filters" role="tablist" aria-label="Filter by category"></div>
+
+        <div id="grid" class="grid" aria-live="polite"></div>
+
+        <p id="empty" class="empty hidden">No gear matches that — try a different search.</p>
+      </div>
+    </section>
+
+    <section id="how" class="how">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <h3>Pick your kit</h3>
+            <p>Browse the catalog and choose what you need for your trip. Add as many items as you want.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>Choose your rate</h3>
+            <p>Daily for weekend trips, weekly for road-trips, monthly for the whole season. The longer you go, the cheaper per day.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>Pickup or delivery</h3>
+            <p>Grab it at our Mt. Pleasant shop, or have it dropped off anywhere in Metro Vancouver for a flat $20.</p>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <h3>Adventure & return</h3>
+            <p>Send it back clean-ish. We handle the deep clean, repairs and waterproofing — so you don't have to.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="pickup" class="pickup">
+      <div class="container pickup-inner">
+        <div class="pickup-copy">
+          <h2>Pickup in Mt. Pleasant</h2>
+          <p>Open Thursday – Monday, 10am to 6pm. Walk-ins welcome but reservations get priority — especially on long weekends.</p>
+          <ul class="pickup-list">
+            <li><strong>Address</strong><span>123 East 6th Ave, Vancouver, BC</span></li>
+            <li><strong>Hours</strong><span>Thu – Mon · 10am – 6pm</span></li>
+            <li><strong>Delivery</strong><span>$20 flat within Metro Vancouver</span></li>
+            <li><strong>Late return</strong><span>Pro-rated daily rate, no surprise fees</span></li>
+          </ul>
+        </div>
+        <div class="pickup-map" aria-hidden="true">
+          <div class="map-grid">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span class="map-pin">●</span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" class="brand brand-footer" aria-label="BaseCamp YVR home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">BaseCamp <em>YVR</em></span>
+        </a>
+        <p class="muted small">Built for the rainforest. Stocked for the alpine.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Visit</h4>
+          <p>123 East 6th Ave<br />Vancouver, BC V5T 1J6</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@basecampyvr.ca<br />(604) 555-0184</p>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <p>@basecampyvr</p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> BaseCamp YVR Rentals Ltd.</span>
+      <span>Made in Vancouver, BC 🍁</span>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
